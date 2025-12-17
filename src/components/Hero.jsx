@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="py-16 px-4 md:py-24 bg-gradient-to-b from-white to-gray-50">
+    <section id="hero" className="py-16 px-4 md:py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto max-w-6xl">
         
         <div className="text-center mb-16">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState('O нас');
+  const [activeLink, setActiveLink] = useState('О нас');
 
   const handleLinkClick = (linkName, e) => {
     e.preventDefault();
