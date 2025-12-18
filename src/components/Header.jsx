@@ -14,7 +14,7 @@ const Header = () => {
         sectionId = 'hero'; 
         break;
       case 'Об обучении':
-        sectionId = 'opportunities'; 
+        sectionId = 'programs';  // ← ИЗМЕНИЛИ на 'programs'
         break;
       case 'Преподаватели':
         sectionId = 'teachers'; 

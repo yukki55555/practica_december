@@ -32,8 +32,8 @@ const Programs = () => {
     }
   ];
 
-  return (
-    <section className="py-16 px-4 md:py-24 bg-white">
+   return (
+    <section id="programs" className="py-16 px-4 md:py-24 bg-white">
       <div className="container mx-auto max-w-6xl">
         
         <div className="text-center mb-20">
