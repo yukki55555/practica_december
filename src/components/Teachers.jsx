@@ -25,7 +25,7 @@ const Teachers = () => {
   ];
 
   return (
-    <section id="teachers" className="py-20 px-4 md:py-28 bg-white">
+    <section id="teachers" className="py-20 px-4 md:py-29 bg-white">
       <div className="container mx-auto max-w-7xl">
         
         <div className="text-center mb-24">
