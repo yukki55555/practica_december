@@ -25,34 +25,34 @@ const Teachers = () => {
   ];
 
   return (
-    <section id="teachers" className="py-20 px-4 md:py-29 bg-white">
+    <section id="teachers" className="py-12 px-4 sm:py-16 md:py-20 bg-white">
       <div className="container mx-auto max-w-7xl">
         
-        <div className="text-center mb-24">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+        <div className="text-center mb-12 sm:mb-16 md:mb-24">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 sm:mb-8">
             Наши преподаватели
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 md:gap-16 max-w-7xl mx-auto">
           {teachers.map((teacher, index) => (
             <div 
               key={index}
               className="text-center"
             >
-              <div className="mb-10 flex items-center justify-center">
-                <div className="rounded-3xl">
+              <div className="mb-6 sm:mb-8 md:mb-10 flex items-center justify-center">
+                <div className="rounded-2xl sm:rounded-3xl">
                   <img 
                     src={teacher.photo}
                     alt={teacher.name}
-                    className="w-80 h-80 object-contain rounded-3xl"
+                    className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 object-contain rounded-2xl sm:rounded-3xl mx-auto"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.parentElement.innerHTML = `
-                        <div class="w-80 h-80 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center rounded-3xl">
+                        <div class="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center rounded-2xl sm:rounded-3xl mx-auto">
                           <div class="text-center">
-                            <div class="text-8xl mb-4">👨‍🏫</div>
-                            <p class="text-2xl text-gray-600 font-medium">${teacher.name}</p>
+                            <div class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl mb-2 sm:mb-4"></div>
+                            <p class="text-lg sm:text-xl md:text-2xl text-gray-600 font-medium">${teacher.name}</p>
                           </div>
                         </div>
                       `;
@@ -61,12 +61,11 @@ const Teachers = () => {
                 </div>
               </div>
               
-              <h3 className="text-4xl font-bold text-gray-900 mb-4">
+              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
                 {teacher.name}
               </h3>
               
-
-              <p className="text-2xl text-gray-700">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700">
                 {teacher.experience}
               </p>
             </div>
